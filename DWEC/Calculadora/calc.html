@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<script src="calc.js"></script>!-->
+</head>
+<body>
+    <input type="text" name="number1" id="num1"><br>
+    <input type="text" name="number2" id="num2"><br>
+    <input type="button" value="suma" id="suma" onclick="operacion(parseInt(document.getElementById('num1').value), parseInt(document.getElementById('num2').value), 'suma')">
+    <input type="button" value="resta" onclick="operacion(parseInt(document.getElementById('num1').value), parseInt(document.getElementById('num2').value), 'resta')">
+    <input type="button" value="multiplicación" onclick="operacion(parseInt(document.getElementById('num1').value), parseInt(document.getElementById('num2').value), 'multiplicacion')">
+    <input type="button" value="división" onclick="operacion(parseInt(document.getElementById('num1').value), parseInt(document.getElementById('num2').value), 'division')">
+    <script>
+        /*function suma(num1, num2){
+            alert(num1+num2);
+            document.write("El resultado es: " + (num1-num2));
+        }
+
+        function resta(num1, num2){
+            alert(num1-num2);
+            document.write("El resultado es: " + (num1-num2));
+        }
+
+        function multiplicacion(num1, num2){
+            alert(num1*num2);
+            document.write("El resultado es: " + (num1*num2));
+        }
+
+        function division(num1, num2){
+            alert(num1/num2);
+            document.write("El resultado es: " + (num1/num2));
+        }*/
+        function operacion (num1, num2, opt){
+            if(opt === "suma"){
+                alert(num1+num2);
+            } else if (opt === "resta") {
+                alert(num1-num2);
+            } else if (opt === "multiplicacion"){
+                alert(num1*num2);
+            } else {
+                alert(num1/num2);
+            }
+
+        }
+    </script>
+</body>
+</html>
