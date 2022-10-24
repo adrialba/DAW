@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Nombre:&nbsp;</label><input type="text" name="nombre" id="nam" /><br />
+    <label>Valor:&nbsp;</label><input type="text" name="valor" id="val" /><br />
+    <label>Expiración:&nbsp;</label><input type="text" name="dias" id="exp" /><br />
+    <button onclick="setCookie(document.getElementById('nam').value,
+         document.getElementById('val').value, document.getElementById('exp').value)">Guardar Cookie</button>
+    <button onclick="getCookies()">Mostrar Cookies</button>
+    <button onclick="deleteCookie()">Borrar Cookie</button>
+    <script src="./cookies.js"></script>
+</body>
+
+</html>
