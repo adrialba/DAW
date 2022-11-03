@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Alpha Danthe";
+    src: url(fonts/AlphaDanthe_PERSONAL_USE_ONLY.otf);
+    src: url(fonts/AlphaDantheItalic_PERSONAL_USE_ONLY.otf);
+}
+body{
+    background-color: lightgray;
+}
+table{
+    background-color: white;
+    margin-left:10%;
+    width: 80%;
+    height: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li:hover{
+    background-color: #111;
+}
+#imgHead{
+    float: left;
+    display:block;
+    max-width: 20%;
+    max-height: 20%;
+}
+.tHeader{
+    font-family: "Alpha Danthe";
+    font-weight: bolder;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+}
+

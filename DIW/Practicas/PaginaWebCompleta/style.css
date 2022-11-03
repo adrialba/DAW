@@ -1,0 +1,16 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: lightgrey;
+}
+.content{
+    background-color:white;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+#imgHead{
+    height: 10%;
+    width: 10%;
+    border-style: dashed;
+}
