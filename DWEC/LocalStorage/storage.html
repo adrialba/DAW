@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if (typeof(Storage) != "undefined"){
+            alert("El navegador soporta Web Storage");
+        } else {
+            alert("El nafvegador no soporta Web Storage");
+        }
+    </script>
+    <input type="text" name="nombre" id="nombre" />
+    <button name="anadir" onclick="anadir(document.getElementById('nombre').value)">Añadir Storage</button>
+    <button name="mostrar" onclick="mostrar()">Mostrar Storage</button>
+    <button name="eliminar" onclick="eliminar()">Elimiar Storage</button>
+    <button name="eliminarTodo" onclick="eliminarTodo()">Eliminar todo el Storage</button>
+    <script src="./storage.js"></script>
+
+</body>
+</html>

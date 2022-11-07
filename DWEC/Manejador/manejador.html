@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="cabecera">Esta es la cabecera</h1>
+    <p id="par1">Parrafo 1</p>
+    <p id="par2">Parrafo 2</p>
+    <script>
+
+        // document.getElementById("cabecera").addEventListener("mouseover", manejador);
+        // document.getElementById("cabecera").addEventListener("mouseout", manejador);
+
+        // function manejador(e) {
+        //     if (e.type == "mouseover") {
+        //         document.getElementById("cabecera").style.color = "red";
+        //     }
+
+        //     if (e.type == "mouseout") {
+        //         document.getElementById("cabecera").style.color = "black";
+        //     }
+        //}
+
+        document.getElementById("par1").addEventListener("click", manejador);
+        document.getElementById("par2").addEventListener("click", manejador);
+        function manejador(e) {
+            if (e.target.id == "par1") {
+                document.getElementById("par1").style.color = "yellow";
+            }
+            if (e.target.id == "par2") {
+                document.getElementById("par2").style.color = "blue";
+            }
+        }
+    </script>
+</body>
+
+</html>
