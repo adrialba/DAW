@@ -1,6 +1,118 @@
-@media (min-width: 768px) and (max-width:979px) {
-    
+@font-face {
+    font-family: "Alpha Danthe";
+    src: url(fonts/AlphaDanthe_PERSONAL_USE_ONLY.otf);
+    src: url(fonts/AlphaDantheItalic_PERSONAL_USE_ONLY.otf);
 }
-@media (max-width: 40px){
+
+/*LAPTOP*/
+@media (max-width: 1280px) {
+    body{
+        margin: 1px;
+    }
+
+    /*HEADER*/
+    header {
+        font-family: "Alpha Danthe";
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    img {
+        float: left;
+        display: block;
+        max-width: 15%;
+        max-height: 15%;
+    }
+
+    .navegacion {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .navegacion li {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navegacion li:hover {
+        background-color: #111;
+    }
+
+    /*CONTENT*/
+    .marketing{
+        display: block;
+        float: left;
+        width: 20%;
+        height: 50%;
+        background-color: red;
+    }
     
+    .barNav{
+        display: block;
+        float: right;
+        width: 20%;
+        background-color: aqua;
+    }
+    /*FOOTER*/
+    footer {
+        background-color: grey;    
+    }
+    footer ul li {
+        display: inline-block;
+        padding-right: 10px;
+        margin: 0px 0px 15px 0;
+    }
+
+    iframe {
+        width: 400;
+        height: 300;
+    }
+}
+
+/*TABLET*/
+@media (max-width: 1080px)  {
+    /*HEADER*/
+    /*CONTENT*/
+    /*footer*/
+    footer{
+        background-color: #707070;
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 360px) {
+    body{
+        overflow: auto;
+    }
+
+    /*HEADER*/
+    /*CONTENT*/
+    /*footer*/
+    footer{
+        background-color: #606060;
+    }
+    footer ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    footer ul li {
+        width: 30%;
+    }
 }
