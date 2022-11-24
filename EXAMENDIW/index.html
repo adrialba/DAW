@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pagina web del examen de DIW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1ª Evaluación Adrián Alba</title>
+    <style>
+        @media (max-width:900px) {
+            #menu ul {
+                list-style: none;
+            }
+
+            #menu ul li {
+                display: inline-block;
+                padding: 5px;
+                background-color: #ccccff;
+                border-radius: 20%;
+            }
+
+            h1,
+            h2 {
+                text-align: center;
+            }
+
+            #contenedor {
+                display: inline-block;
+            }
+
+            #menuProducto {
+                background-color: lightblue;
+                float: left;
+                max-width: 15%;
+            }
+
+            #menuProducto ul {
+                list-style: none;
+                display: contents;
+            }
+
+            #menuProducto ul li {
+                display: block;
+                background-color: #ccccff;
+                margin: 3%;
+            }
+
+            #contenido {
+                background-color: lightgray;
+                margin: 20%;
+            }
+
+            #publicidad {
+                background-color: lightgreen;
+                max-width: 15%;
+            }
+
+            footer {
+                text-align: center;
+                max-width: 100%;
+                background-color: lightgrey;
+            }
+
+            article {
+                margin-right: 5 5 5 0;
+            }
+        }
+
+        @media (max-width:750px) {
+            body {
+                font-size: 0.2em;
+            }
+
+            h1,
+            h2 {
+                text-align: center;
+            }
+
+            #menu ul {
+                list-style: none;
+                border-style: none;
+            }
+
+            #menu ul li {
+                display: inline-block;
+                padding: 5px;
+                background-color: #ccccff;
+                border-radius: 20%;
+            }
+
+            #menuProducto {
+                max-width: 25%;
+            }
+
+            #menuProducto ul {
+                list-style: none;
+                display: contents;
+            }
+
+            #menuProducto ul li {
+                display: block;
+                background-color: #ccccff;
+                margin: 3%;
+            }
+
+            #article {
+                background-color: lightgray;
+            }
+
+            #publicidad {
+                background-color: orange;
+                max-width: 75%;
+            }
+
+        }
+
+        @media (max-width:600px) {
+
+            h1,
+            h2 {
+                text-align: center;
+            }
+
+            #publicidad {
+                visibility: hidden;
+            }
+
+            #contenido {
+                background-color: lightgray;
+                font-size: 0.5rem;
+                margin: 5%;
+            }
+
+            #menu,
+            #menuProducto {
+                font-size: -0.75rem;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            ul li {
+                display: inline-block;
+                padding: 5%;
+                background-color: #ccccff;
+                border-radius: 20%;
+            }
+
+            footer {
+                text-align: center;
+                max-width: 100%;
+                background-color: lightgrey;
+            }
+        }
+
+        @media screen {
+            #menu ul {
+                list-style: none;
+            }
+
+            #menu ul li {
+                display: inline-block;
+                padding: 5px;
+                background-color: #ccccff;
+                border-radius: 20%;
+            }
+
+            h1,
+            h2 {
+                text-align: center;
+            }
+
+            #contenedor {
+                float: left;
+                position: relative;
+            }
+
+            #menuProducto {
+                background-color: lightblue;
+                float: left;
+                max-width: 15%;
+            }
+
+            nav h2 {
+                text-align: center;
+            }
+
+            #menuProducto ul {
+                list-style: none;
+                display: contents;
+            }
+
+            #menuProducto ul li {
+                display: block;
+                background-color: #ccccff;
+                margin: 3%;
+            }
+
+            #contenido {
+                background-color: lightgray;
+                margin: 20%;
+            }
+
+            #publicidad {
+                background-color: lightgreen;
+                max-width: 15%;
+            }
+
+            footer {
+                text-align: center;
+                max-width: 100%;
+                background-color: lightgrey;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Prueba de superación en CSS</h1>
+        <header>
+            <main id="contpage">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">menu 1</a></li>
+                        <li><a href="#">menu 2</a></li>
+                        <li><a href="#">menu 3</a></li>
+                        <li><a href="#">menu 4</a></li>
+                        <li><a href="#">menu 5</a></li>
+                        <li><a href="#">menu 6</a></li>
+                        <li><a href="#">menu 7</a></li>
+                        <li><a href="#">menu 8</a></li>
+                    </ul>
+                </nav>
+                <section id="contenedor">
+                    <nav id="menuProducto">
+                        <h2>Submenu de productos</h2>
+                        <ul>
+                            <li><a href="#">Producto 1</a></li>
+                            <li><a href="#">Producto 2</a></li>
+                            <li><a href="#">Producto 3</a></li>
+                            <li><a href="#">Producto 4</a></li>
+                        </ul>
+                    </nav>
+                    <section id="contenido">
+                        <article>
+                            <br>Este meta tag se utiliza para controlar cómo aparecerá el contenido HTML en los
+                            navegadores móviles. Así nos aseguramos que el contenido se ajusta al ancho del dispositivo.
+                            En este caso estamos indicando que el contenido tendrá el ancho del dispositivo y que la
+                            escala inicial es de 1
+                        </article>
+                        <aside id="publicidad" class="publicidad">Publicidad</aside>
+                    </section>
+                </section>
+                <footer>
+                    <a href="http://misitio.oz">Examen @copyright</a>
+                </footer>
+            </main>
+</body>
+
+</html>
