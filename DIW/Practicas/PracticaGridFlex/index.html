@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+    margin: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1 fr);
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    grid-template-areas:
+        "a a a"
+        "b b b"
+        "c d e"
+        "c f e"
+        "g g g";
+}
+
+.container2 {
+    display: flex;
+    height: 85%;
+    flex-direction: row;
+}
+
+.container3 {
+    display: flex;
+    height: 50%;
+    width: 95%;
+    flex-direction: column;
+}
+
+.container4 {
+    display: flex;
+    height: 95%;
+    width: 95%;
+    flex-direction: column;
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1 fr);
+        grid-template-rows: 150px 150px 150px 150px 150px;
+        grid-template-areas:
+            "a a a"
+            "b b c"
+            "d e e"
+            "f e e"
+            "g g g";
+    }
+
+    .container3 {
+        display: flex;
+        height: 85%;
+        width: 95%;
+        flex-direction: row;
+    }
+
+    .container4 {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeta(3, 1 fr);
+        grid-template-rows: 15% %; 
+        grid-template-areas: 
+            "h i j"
+            "z k y"
+            "x l W"
+            "v m t";
+    }
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1 fr);
+        grid-template-rows: 150px 150px 150px 150px 150px;
+        grid-template-areas:
+            "a a"
+            "b b"
+            "d f"
+            "e e"
+            "g g";
+    }
+
+    .container3 {
+        display: none;
+    }
+
+    .container4 {
+        display: flex;
+        height: 85%;
+        width: 95%;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "a"
+            "d"
+            "f"
+            "g";
+    }
+    #item2,#item5{
+        display: none;
+    }
+}
+
+.container2 div {
+    width: 25%;
+    height: 100%;
+    background-color: black;
+}
+
+.container3 div {
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+}
+
+.container4 div {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#item1 {
+    grid-area: a;
+    background-color: orangered;
+}
+
+#item2 {
+    grid-area: b;
+    background-color: grey;
+}
+
+#item3 {
+    grid-area: c;
+    background-color: darkblue;
+}
+
+#item4 {
+    grid-area: d;
+    background-color: grey;
+}
+
+#item41{
+    grid-area: h;
+    background-color: black;
+}
+
+#item42{
+    grid-area: i;
+    background-color: black;
+}
+
+#item43{
+    grid-area: j;
+    background-color: black;
+}
+
+#item44{
+    grid-area: k;
+    background-color: black;
+}
+
+#item45{
+    grid-area: l;
+    background-color: black;
+}
+
+#item46{
+    grid-area: m;
+    background-color: black;
+}
+
+#item5 {
+    grid-area: e;
+    background-color: grey;
+}
+
+#item6 {
+    grid-area: f;
+    background-color: grey;
+}
+
+#item7 {
+    grid-area: g;
+    background-color: orangered;
+}
+    </style>
+    <!--<link rel="stylesheet" href="css/styles.css">-->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="item1"></div>
+        <div id="item2">
+            <div class="container2">
+                <div id="item21"></div>
+                <div id="item22"></div>
+                <div id="item23"></div>
+                <div id="item24"></div>
+                <div id="item25"></div>
+                <div id="item26"></div>
+                <div id="item27"></div>
+                <div id="item28"></div>
+            </div>
+        </div>
+        <div id="item3">
+            <div class="container3">
+                <div id="item31"></div>
+                <div id="item32"></div>
+                <div id="item33"></div>
+            </div>
+        </div>
+        <div id="item4"></div>
+        <div id="item5">
+            <div class="container4">
+                <div id="item41"></div>
+                <div id="item42"></div>
+                <div id="item43"></div>
+                <div id="item44"></div>
+                <div id="item45"></div>
+                <div id="item46"></div>
+            </div>
+        </div>
+        <div id="item6"></div>
+        <div id="item7"></div>
+    </div>
+</body>
+
+</html>

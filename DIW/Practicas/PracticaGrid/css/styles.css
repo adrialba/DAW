@@ -1,0 +1,83 @@
+.container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1 fr);
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-areas:
+        "a a b"
+        "c d b"
+        "c e e"
+        "f f f";
+}
+@media (max-width:900px) {
+    .container {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(3, 1 fr);
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-template-areas:
+        "a a b"
+        "e c b"
+        "e c b"
+        "f c b";
+    }
+}
+
+@media (max-width:700px) {
+    .container {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(3, 1 fr);
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-template-areas:
+            "a a a"
+            "b e f"
+            "b e f"
+            "b d f";
+    }
+}
+
+@media (max-width:600px) {
+    .container {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(3, 1 fr);
+        grid-template-rows: 100px 100px 100px;
+        grid-template-areas:
+            "b c c"
+            "b a a"
+            "b a a";
+    }
+}
+
+
+
+#item1 {
+    grid-area: a;
+    background-color: black;
+}
+
+#item2 {
+    grid-area: b;
+    background-color: orangered;
+}
+
+#item3 {
+    grid-area: c;
+    background-color: darkgrey;
+}
+
+#item4 {
+    grid-area: d;
+    background-color: transparent;
+}
+
+#item5 {
+    grid-area: e;
+    background-color: #444444;
+}
+
+#item6 {
+    grid-area: f;
+    background-color: #777777;
+}
