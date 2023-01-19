@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>El n&uacute;mero 1000 de Fibonacci es: <span id="result"></span></p>
+    <button onclick="begin()">Empezar</button>
+    <button onclick="release()">Acabar</button>
+    <script type="text/javascript">
+        let wk = undefined;
+        function begin() {
+            if (typeof(wk) == "undefined") {
+                wk = new Worker("fibo.js");
+                wk.onmessage = function (event) {
+                    document.getElementById("result").innerHTML = event.data;
+                };
+            }
+        }
+
+        function release() {
+            wk.terminate();
+            wk = undefined;
+        }
+    </script>
+</body>
+
+</html>

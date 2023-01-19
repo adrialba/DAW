@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Nombre:<span id="nombre"></p>
+    <p>Imagen:<span id="imagen"></span></p>
+    <p>Tipo:<span id="tipo"></span></p>
+    <button onclick="loadDoc()">CargarDatos</button>
+    <script type="text/javascript">
+        function loadDoc() {
+            const DIGI = prompt("¿Qué Digimon quieres ver?");
+            const REQ = "https://digimon-api.vercel.app/api/digimon/name/" + DIGI;
+            const XHTTP = new XMLHttpRequest();
+            XHTTP.onload = function () {
+                let digiSON = JSON.parse(this.responseText);
+                document.getElementById("nombre").innerHTML = digiSON[0].name;
+                document.getElementById("imagen").innerHTML = "<img src=\"" + digiSON[0].img + "\">";
+                document.getElementById("tipo").innerHTML = digiSON[0].level;
+            }
+            XHTTP.open("GET", REQ);
+            XHTTP.send();
+        }
+
+    </script>
+</body>
+
+</html>

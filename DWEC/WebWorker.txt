@@ -1,0 +1,9 @@
+De un proceso principal, lanzar un subproceso, se utilizan para operaciones largas, como por ejemplo, busquedas.
+Se utilizan para permitir que nuestra página se siga ejecutando, y que de manera interna se sigan ejecutando el resto de sentencias
+A diferencia del proceso principal, que tiene acceso completo al DOM, el subproceso solo tiene acceso a la parte del DOM que le permite
+el proceso principal.
+Desde el programa principal, se lanza la ejecución del segundo proceso, indicándole los valores necesarios, para ello, el subproceso debe estar
+escuchando. Para enviar el resultado de la ejecución al proceso principal, ha de estar escuchando de igual forma.
+Para la ejecución de el segundo proceso, se ha de crear un objeto de tipo "Web Worker" en el proceso principal. Para definir el objeto,
+utilizamos la sentencia "let wk = new worker("myTask.js")". El escuchador/controlador de eventos se ejecutaría mediante "wk.onmessage = function(oEvent){
+console.log("Called back by the worker!\n");};" Para enviar el mensaje hacia el subproceso, se utilizaría la sentencia "wk.postMessage("");"

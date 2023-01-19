@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <ul id="lista"></ul>
+    <button onclick="loadDoc()">CargarDatos</button>
+    <script type="text/javascript">
+        function loadDoc() {
+            const REQ = "https://jsonplaceholder.typicode.com/users";
+            const XHTTP = new XMLHttpRequest();
+            XHTTP.onload = function () {
+                let placeData = JSON.parse(this.response);
+                let pDlenght = placeData.length;
+                console.log(typeof (placeData));
+                console.log(pDlenght);
+                for(let i = 0; i<placeData.length;i++){
+                    let list = document.getElementById("lista");
+                    let li = document.createElement("li");
+                    li.innerText = placeData[i].name;
+                    let ul = document.createElement("ul");
+                    li.appendChild(ul);
+                    create
+                    list.appendChild(li);
+                }
+            }
+            XHTTP.open("GET", REQ);
+            XHTTP.send();
+        }
+    </script>
+</body>
+</html>
+
