@@ -24,6 +24,7 @@ filtro.addEventListener('change', (e) => {
 
 
 BTN.addEventListener('click', (e) => {
+    document.getElementById('portfolio').innerHTML = "";
     console.log(tp);
     if (tp == "name") {
         let name = document.getElementById('busqueda').value;
