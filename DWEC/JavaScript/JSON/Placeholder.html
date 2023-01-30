@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    
+
     <ul id="lista"></ul>
     <button onclick="loadDoc()">CargarDatos</button>
     <script type="text/javascript">
@@ -21,13 +21,15 @@
                 let pDlenght = placeData.length;
                 console.log(typeof (placeData));
                 console.log(pDlenght);
-                for(let i = 0; i<placeData.length;i++){
+                for (let i = 0; i < placeData.length; i++) {
                     let list = document.getElementById("lista");
                     let li = document.createElement("li");
                     li.innerText = placeData[i].name;
                     let ul = document.createElement("ul");
                     li.appendChild(ul);
-                    create
+                    let lim = document.createElement("li");
+                    lim.innerText = placeData[i].email;
+                    ul.appendChild(lim);
                     list.appendChild(li);
                 }
             }
@@ -36,5 +38,5 @@
         }
     </script>
 </body>
-</html>
 
+</html>

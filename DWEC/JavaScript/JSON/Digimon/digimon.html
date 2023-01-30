@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="nofollow">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/digidivice.png" type="image/png" />
+    <title>Digimon API</title>
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="img/digimon.jpg" width="200">
+            <form class="d-flex" id="frm">
+                <select class="form-control form-control-lg" id="slct">
+                    <option value="empty">Elige una opci&oacute;n:</option>
+                    <option value="name">Nombre</option>
+                    <option value="level">Nivel</option>
+                </select>
+                <span id="txt"></span>
+                <input type="text" id="busqueda" class="form-control mr-1" placeholder="Qué quieres buscar?">
+                <button id="btn" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+    </div>
+    <div id="content">
+        <div id="portfolio" class="row row-cols-1 row-cols-md3 row-cold-lg-4">
+        </div>
+    </div>
+    <script type="text/javascript" src="digimon.js"></script>
+</body>
+
+</html>
