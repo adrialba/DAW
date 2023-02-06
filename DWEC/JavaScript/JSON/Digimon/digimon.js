@@ -1,6 +1,5 @@
 const URL = "https://digimon-api.vercel.app/api/digimon/";
 const FRM = document.getElementById('frm');
-const BTN = document.getElementById('btn');
 let lvl;
 let tp = "";
 let nivel = "";
@@ -22,8 +21,7 @@ filtro.addEventListener('change', (e) => {
     } else getAllData(URL);
 })
 
-
-BTN.addEventListener('click', (e) => {
+const btn = document.getElementById('btn').addEventListener('click', (e) => {
     document.getElementById('portfolio').innerHTML = "";
     console.log(tp);
     if (tp == "name") {
@@ -46,7 +44,6 @@ const getAllData = async (urlCompleta) => {
             document.getElementById('portfolio').appendChild(GIF);
         });
     })
-
 }
 
 const getLevel = async () => {
@@ -71,7 +68,8 @@ const getLevel = async () => {
         OPTION.innerText = element;
         SELECT.appendChild(OPTION);
     });
-    FRM.insertBefore(SELECT, BTN);
+    document.getElementById('frm').insertBefore(SELECT, document.getElementById('btn'));
+    //FRM.insertBefore(SELECT, BTN);
 }
 FRM.onsubmit = (e) => {
     e.preventDefault();
