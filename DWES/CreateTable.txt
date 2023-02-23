@@ -1,0 +1,10 @@
+/*
+create database dwes;
+use dwes;
+*/
+CREATE TABLE IF NOT EXISTS atlas (
+    pais VARCHAR (50) PRIMARY KEY,
+    capital VARCHAR (50)
+);
+
+INSERT INTO atlas (pais,capital) VALUES ('Francia','Paris');

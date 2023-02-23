@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media (max-width:900px){
+            @keyframes mueve {
+            0% {top:0%; left: 0%; background: blue;}
+            20% {top:0%; left: 90%; background: yellow; opacity: 0.5;}
+            40% {top:50%; left: 50%;background: red; border-radius: 50%; transform: rotateY(180deg);}
+            60% {top:100%; left: 90%; background: orange; transform: scale(0.5);}
+            80% {top:100%; left: 0%; background: green; transform: perspective(400px) rotateY(-45deg);}
+            100% {top:0%; left: 0%; background: blue;}
+            }
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation: mueve 50s alternate;
+                border: black 2px solid;
+                border-radius: 20%;
+            }
+            div , p {
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+        @media (max-width:750px){
+            @keyframes mueve {
+            0% {top:0%; left: 0%; background: blue;}
+            20% {top:0%; left: 95%; background: yellow; opacity: 0.5;}
+            40% {top:50%; left: 50%;background: red; border-radius: 50%; transform: rotateY(180deg);}
+            60% {top:100%; left: 95%; background: orange; transform: scale(0.5);}
+            80% {top:100%; left: 0%; background: green; transform: perspective(400px) rotateY(-45deg);}
+            100% {top:0%; left: 0%; background: blue;}
+            }
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation: mueve 30s alternate;
+                border: black 2px solid;
+                border-radius: 20%;
+            }
+            div , p {
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+        @media (max-width:600px){
+            @keyframes mueve {
+            0% {top:0%; left: 0%; background: blue;}
+            20% {top:0%; left: 95%; background: yellow; opacity: 0.5;}
+            40% {top:50%; left: 50%;background: red; border-radius: 50%; transform: rotateY(180deg);}
+            60% {top:100%; left: 95%; background: orange; transform: scale(0.5);}
+            80% {top:100%; left: 0%; background: green; transform: perspective(400px) rotateY(-45deg);}
+            100% {top:0%; left: 0%; background: blue;}
+            }
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation: mueve 30s alternate;
+                border: black 2px solid;
+                border-radius: 20%;
+            }
+            div , p {
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+        @media screen {
+            @keyframes mueve {
+                0% {top:0%; left: 0%; background: blue;}
+                20% {top:0%; left: 95%; background: yellow; opacity: 0.5;}
+                40% {top:50%; left: 50%;background: red; border-radius: 50%; transform: rotateY(180deg);}
+                60% {top:100%; left: 95%; background: orange; transform: scale(0.5);}
+                80% {top:100%; left: 0%; background: green; transform: perspective(400px) rotateY(-45deg);}
+                100% {top:0%; left: 33%; background: blue;}
+            }
+            div {
+                width: fit-content;
+                padding: 50px;
+                background-color: red;
+                position: relative;
+                animation: mueve 30s alternate;
+                border: black 2px solid;
+                border-radius: 20%;
+            }
+        div, p {
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+    </style>
+    <title>Examen 2ºEval</title>
+</head>
+<body>
+    <div>
+        <p class="front">Se mueve</p>
+    </div>
+</body>
+</html>
